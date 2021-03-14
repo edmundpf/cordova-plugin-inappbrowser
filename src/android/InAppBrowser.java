@@ -1035,7 +1035,7 @@ public class InAppBrowser extends CordovaPlugin {
                     }
                 });
 
-                inAppWebView.setWebChromeClient(inAppChromeClient)
+                inAppWebView.setWebChromeClient(inAppChromeClient);
                 currentClient = new InAppBrowserClient(thatWebView, edittext, beforeload);
                 inAppWebView.setWebViewClient(currentClient);
                 WebSettings settings = inAppWebView.getSettings();
