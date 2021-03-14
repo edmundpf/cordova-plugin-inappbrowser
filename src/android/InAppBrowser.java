@@ -851,7 +851,8 @@ public class InAppBrowser extends CordovaPlugin {
                     enableFullScreen(cordova.getActivity(), dialog.getWindow());
                 }
 
-                dialog.requestWindowFeature(Window.FEATURE_NO_TITLE);
+                // REMOVED LINE - CRASHES APP
+                // dialog.requestWindowFeature(Window.FEATURE_NO_TITLE);
                 if (fullscreen) {
                     dialog.getWindow().setFlags(WindowManager.LayoutParams.FLAG_FULLSCREEN, WindowManager.LayoutParams.FLAG_FULLSCREEN);
                 }
